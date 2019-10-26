@@ -21,7 +21,7 @@ class CreateEmployeesTable extends Migration
             $table->unsignedInteger('tax')->nullable();
             $table->unsignedInteger('housing')->nullable();
             $table->unsignedInteger('transport')->nullable();
-            $table->decimal('growth_rate',4,2);
+            $table->decimal('growth_rate',4,2)->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

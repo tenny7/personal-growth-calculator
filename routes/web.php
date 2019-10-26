@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::view('employee/enrollment', 'employee.enrollment')->name('employee.enrollment');
 
 Auth::routes();
 
